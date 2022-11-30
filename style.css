@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.card {
+  display: flex;
+  z-index: 1;
+  background-color: white;
+  width: 25rem;
+  height: 15rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  position: absolute;
+  transform: unset;
+  transition: ease;
+  transition-duration: 0.5s;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0.3;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  height: fit-content;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.img {
+  border-radius: 100%;
+  overflow: hidden;
+  border-color: crimson;
+  border-width: 1px;
+  border-style: solid;
+  position: absolute;
+  top: -3rem;
+  left : 3rem;
+
+}
+
+.description{
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+
+.rightCard {
+  right: 5rem;
+  top: 20rem;
+}
+
+.middleCard {
+  right: 35rem;
+  top: 8rem;
+}
+
+.leftCard {
+  right: 50rem;
+  top: 22rem;
+}
+
+.hiddenCard{
+  background-color: black;
+  width: 25rem;
+  height: 15rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  position: absolute;
+  transform: unset;
+  transition: ease;
+  transition-duration: 0.5s;
+}
+
+
