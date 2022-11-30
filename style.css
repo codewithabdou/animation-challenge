@@ -34,6 +34,10 @@
   flex: 0.3;
 }
 
+.hiddenHeader {
+  display: none;
+}
+
 .title {
   display: flex;
   flex-direction: column;
@@ -57,9 +61,14 @@
 }
 
 .description{
+  display: block;
   padding-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.hiddenDescription{
+  display: none;
 }
 
 
@@ -81,14 +90,8 @@
 
 .hiddenCard{
   background-color: black;
-  width: 25rem;
-  height: 15rem;
-  border-radius: 0.5rem;
-  flex-direction: column;
-  position: absolute;
-  transform: unset;
-  transition: ease;
-  transition-duration: 0.5s;
+  z-index: 0;
+
 }
 
 
