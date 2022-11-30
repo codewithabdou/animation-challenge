@@ -1,17 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.container {
+body {
   display: flex;
   height: 100vh;
   width: 100vw;
   justify-content: center;
   align-items: center;
-  background-color: rgb(60, 2, 81);
+  background-color: #1e293b;
 }
 
 .card {
@@ -25,6 +27,7 @@
   position: absolute;
   transition: ease-out;
   transition-duration: 0.5s;
+  box-shadow: #312e81 0px 5px 15px;
 }
 
 .header {
@@ -47,34 +50,36 @@
   padding-top: 10px;
 }
 
+.title p {
+  font-size: 14px;
+}
 .img {
   border-radius: 100%;
   overflow: hidden;
   border-color: crimson;
+  box-shadow: #312e81 0px 5px 15px;
   border-width: 1px;
   border-style: solid;
   position: absolute;
   top: -3rem;
-  left : 3rem;
-
+  left: 3rem;
+  background-color: white;
+  object-fit: cover;
+  cursor: pointer;
 }
 
-.description{
+.description {
   display: block;
-  padding-top: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 1.5rem;
 }
 
-.hiddenDescription{
+.hiddenDescription {
   display: none;
 }
 
-
-
 .rightCard {
   right: 5rem;
-  top: 20rem;
+  top: 22rem;
 }
 
 .middleCard {
@@ -87,8 +92,12 @@
   top: 22rem;
 }
 
-.hiddenCard{
+.hiddenCard {
   background-color: transparent;
+  box-shadow: none;
 }
 
-
+.description {
+  font-weight: 500;
+  font-size: 18px;
+}
