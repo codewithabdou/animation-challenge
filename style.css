@@ -11,7 +11,7 @@
   width: 100vw;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgb(60, 2, 81);
 }
 
 .card {
@@ -23,8 +23,7 @@
   border-radius: 0.5rem;
   flex-direction: column;
   position: absolute;
-  transform: unset;
-  transition: ease;
+  transition: ease-out;
   transition-duration: 0.5s;
 }
 
@@ -89,9 +88,7 @@
 }
 
 .hiddenCard{
-  background-color: black;
-  z-index: 0;
-
+  background-color: transparent;
 }
 
 
